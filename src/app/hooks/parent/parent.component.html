@@ -1,0 +1,12 @@
+<app-child [refTypes]="ref" [valueTypes]="val"></app-child>
+
+<button (click)="changeValueType()">
+  Value Type
+</button>
+
+<button (click)="changeRefType()">
+  Ref Type
+</button>
+
+
+<a [routerLink]="['/child']"> Home </a>

@@ -1,0 +1,11 @@
+<div *ngFor="let user of users$ | async;  trackBy:trackByFn">
+  {{user.name}}
+
+  <!-- lütfen yapmayalım yanlış bir yöntem -->
+  <!-- <span>Web Site :</span>{{urlFormatter(user.website)}} -->
+  <span>Web Site :</span>{{user.website | urlFormatter:'http'}}
+</div>
+
+
+
+<!-- domda listeleme yaparken trackBy function kullanırsak sadece listede güncellenen itemlar tekrar angular tarafından render edilir. Geri kalan kısım render maliyeti oluşturmaz.  -->
