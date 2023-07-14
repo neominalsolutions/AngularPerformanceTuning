@@ -13,8 +13,10 @@ import { MaterialModule } from './shared/material.module';
 import { ResolverSampleComponent } from './resolver-sample/resolver-sample.component';
 import { UrlFormatterPipe } from './pipes/url-formatter.pipe';
 import { ScrollingModule } from '@angular/cdk/scrolling';
+import { CDParentComponent } from './ChangeDetection/cdparent/cdparent.component';
+import { CDChildComponent } from './ChangeDetection/cdchild/cdchild.component';
 @NgModule({
-  declarations: [AppComponent, ParentComponent, ChildComponent, AsyncComponent, ResolverSampleComponent, UrlFormatterPipe],
+  declarations: [AppComponent, ParentComponent, ChildComponent, AsyncComponent, ResolverSampleComponent, UrlFormatterPipe, CDParentComponent, CDChildComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

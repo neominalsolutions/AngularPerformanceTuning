@@ -8,6 +8,7 @@ import { CustomPreloadingStrategyService } from './services/CustomPreloadingStra
 import { NetworkAwarePreloadingStrategyService } from './services/NetworkAwarePreloadingStrategyService ';
 import { ResolverSampleComponent } from './resolver-sample/resolver-sample.component';
 import { UserResolver } from './resolvers/user.resolver';
+import { CDParentComponent } from './ChangeDetection/cdparent/cdparent.component';
 
 // npm i network-information-types
 
@@ -42,6 +43,10 @@ const routes: Routes = [
       // data.users
       users: UserResolver, // sayfayı açmadan önce buradaki bağlantı üzerinden veriyi senkronlaştırıcaz.
     },
+  },
+  {
+    path: 'changeDetection',
+    component: CDParentComponent,
   },
 ];
 
