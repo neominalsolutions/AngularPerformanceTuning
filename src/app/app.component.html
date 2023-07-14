@@ -1,11 +1,8 @@
-<router-outlet></router-outlet>
+<h1>
+  {{title}}
+</h1>
 
-{{title}}
-
-<button (click)="OnClick()">Click</button>
-
-<button mat-button color="primary">Primary</button>
-
+<button mat-button color="primary">Material Button</button>
 <hr>
 <a [routerLink]="['onChanges']"> On Changes Hook</a>
 &nbsp;
@@ -16,3 +13,8 @@
 <a [routerLink]="['erp']"> ERP Module</a>
 &nbsp;
 <a [routerLink]="['resolverSample']"> Resolvers </a>
+
+
+<hr>
+
+<router-outlet></router-outlet>
