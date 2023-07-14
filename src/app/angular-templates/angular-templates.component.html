@@ -1,0 +1,52 @@
+<!-- <ng-container [ngTemplateOutlet]="temp1">
+  Angular Container
+</ng-container>
+
+<ul>
+  <ng-container *ngFor="let item of names" [ngTemplateOutlet]="temp3" [ngTemplateOutletContext]="{ $implicit: item }">
+  </ng-container>
+</ul>
+
+<ng-template #temp3 let-a>
+  <li>
+    {{a}}
+  </li>
+</ng-template>
+
+<button (click)="visible=!visible">Göster/Gizle</button>
+
+<div *ngIf="visible">
+  <ng-container [ngTemplateOutlet]="temp1"></ng-container>
+</div>
+
+<div *ngIf="!visible">
+  <ng-container [ngTemplateOutlet]="temp2"></ng-container>
+</div>
+
+<ng-container *ngIf="visible then temp1; else temp2"></ng-container>
+
+<ng-template #temp1>
+  <h1>Create Modal</h1>
+</ng-template>
+
+<ng-template #temp2>
+  <h1>Edit Modal</h1>
+</ng-template> -->
+
+
+
+<app-angular-content>
+  <ng-container #content>
+    <h1>Başlık</h1>
+    <p>
+      dsadwadew
+    </p>
+  </ng-container>
+</app-angular-content>
+
+<app-angular-content>
+  <h1>Başlık 2</h1>
+</app-angular-content>
+
+<app-angular-content>
+</app-angular-content>

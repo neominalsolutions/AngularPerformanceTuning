@@ -9,6 +9,7 @@ import { NetworkAwarePreloadingStrategyService } from './services/NetworkAwarePr
 import { ResolverSampleComponent } from './resolver-sample/resolver-sample.component';
 import { UserResolver } from './resolvers/user.resolver';
 import { CDParentComponent } from './ChangeDetection/cdparent/cdparent.component';
+import { AngularTemplatesComponent } from './angular-templates/angular-templates.component';
 
 // npm i network-information-types
 
@@ -47,6 +48,10 @@ const routes: Routes = [
   {
     path: 'changeDetection',
     component: CDParentComponent,
+  },
+  {
+    path: 'angularTemplates',
+    component: AngularTemplatesComponent,
   },
 ];
 
